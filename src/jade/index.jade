@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(http-equiv="x-ua-compatible", content="ie=edge")
+    title Sasaya Slider
+    link(rel="stylesheet", href="./dist/css/main.css")
+  body
+    .container-fluid
+      .sasaya-slider
+        .mask
+        .arrow
+          .prev(data-method='prev')
+            i.fa.fa-chevron-left
+          .next(data-method='next')
+            i.fa.fa-chevron-right
+        .main
+          - for (var i = 1; i <= 5; i++)
+            .item(style="background-image:url('http://fakeimg.pl/1450x480');")
+              a(href="#", target='_blank')
+                // .de_category-tag(style="background: #F78680;") Category
+                .text-wrapper
+                  h1= 'Title ' + i
+                  h4= 'Content ' + i
+
+    script(src="./dist/js/sasaya-slider.js")
+
+    script.
+      $(function () {
+        $('.sasaya-slider .arrow > *').click(function () {
+          $('.sasaya-slider').sasayaSlider($(this).data('method'));
+        });
+
+        $('.sasaya-slider').sasayaSlider();
+      });
