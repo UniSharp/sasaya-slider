@@ -29,7 +29,7 @@
   };
 
   class SasayaSlider {
-    constructor ($el, opts) {
+    constructor($el, opts) {
       this.$el = $el;
       this.opts = opts;
 
