@@ -26,18 +26,6 @@
     }
   }
 
-  .mask {
-    @include media-breakpoint-up(md) {
-      background-color: #fff;
-      position: absolute;
-      top: $slider-height - 1px;
-      left: 0;
-      height: 1px;
-      width: 100%;
-      z-index: 5;
-    }
-  }
-
   .arrow {
     > * {
       position: absolute;
@@ -161,8 +149,6 @@
           display: none;
         }
       }
-
-      border-bottom: 1px solid white;
     }
   }
 }

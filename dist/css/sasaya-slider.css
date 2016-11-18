@@ -14,15 +14,6 @@
     color: #72dde2; }
   .sasaya-slider a * {
     transition: color .25s ease-in-out; }
-  @media (min-width: 768px) {
-    .sasaya-slider .mask {
-      background-color: #fff;
-      position: absolute;
-      top: 479px;
-      left: 0;
-      height: 1px;
-      width: 100%;
-      z-index: 5; } }
   .sasaya-slider .arrow > * {
     position: absolute;
     width: 80px;
@@ -90,15 +81,13 @@
   @media (max-width: 575px) {
     .sasaya-slider .list {
       display: none; } }
-  .sasaya-slider .list .item {
-    border-bottom: 1px solid white; }
-    @media (max-width: 767px) {
-      .sasaya-slider .list .item {
-        width: 50%;
-        height: 120px; } }
-    .sasaya-slider .list .item, .sasaya-slider .list .item a {
-      height: 120px; }
-    .sasaya-slider .list .item .text-wrapper h1 {
-      font-size: 1.125rem; }
-    .sasaya-slider .list .item .text-wrapper h4 {
-      display: none; }
+  @media (max-width: 767px) {
+    .sasaya-slider .list .item {
+      width: 50%;
+      height: 120px; } }
+  .sasaya-slider .list .item, .sasaya-slider .list .item a {
+    height: 120px; }
+  .sasaya-slider .list .item .text-wrapper h1 {
+    font-size: 1.125rem; }
+  .sasaya-slider .list .item .text-wrapper h4 {
+    display: none; }
