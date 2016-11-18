@@ -1,4 +1,6 @@
 {
+  "name": "sasaya-slider",
+  "version": "1.0.0",
   "devDependencies": {
     "babel-preset-es2015": "^6.9.0",
     "browser-sync": "^2.13.0",

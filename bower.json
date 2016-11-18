@@ -1,5 +1,6 @@
 {
-  "name": "sasaya-gulp",
+  "name": "sasaya-slider",
+  "version": "1.0.0",
   "dependencies": {
     "jquery": "^3.1.1"
   },
