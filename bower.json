@@ -1,6 +1,14 @@
 {
   "name": "sasaya-slider",
   "version": "1.0.0",
+  "license": "MIT",
+  "main": [
+      "dist/js/sasaya-slider.js",
+      "dist/css/sasaya-slider.css"
+  ],
+  "ignore": [
+      "yarn.lock"
+  ],
   "dependencies": {
     "jquery": "^3.1.1"
   },
