@@ -15,7 +15,7 @@ A RWD images/text slider with a side column.
       i.fa.fa-chevron-right
   .main
     - for (var i = 1; i <= 5; i++)
-      .item(style="background-image:url('http://fakeimg.pl/1450x480');")
+      .item(style="background-image: url('http://fakeimg.pl/1450x480');")
         a(href="#", target='_blank')
           .text-wrapper
             h1= 'Title ' + i
