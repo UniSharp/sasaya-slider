@@ -2,6 +2,8 @@
 
 A RWD images/text slider with a side column.
 
+[See Demo Page.](https://unisharp.github.io/sasaya-slider/)
+
 ## Usage
 
 ```jade
