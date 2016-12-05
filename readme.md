@@ -1,11 +1,42 @@
 # Sasaya Slider
 
+A RWD images/text slider with a side column.
+
+![Sasaya Slider](https://unisharp.github.io/sasaya-slider/images/demo.png "Sasaya Slider")
+
+## Usage
+
+```jade
+.sasaya-slider
+  .arrow
+    .prev(data-method='prev')
+      i.fa.fa-chevron-left
+    .next(data-method='next')
+      i.fa.fa-chevron-right
+  .main
+    - for (var i = 1; i <= 5; i++)
+      .item(style="background-image:url('http://fakeimg.pl/1450x480');")
+        a(href="#", target='_blank')
+          .text-wrapper
+            h1= 'Title ' + i
+            h4= 'Content ' + i
+
+script.
+  $(function () {
+    $('.sasaya-slider .arrow > *').click(function () {
+      $('.sasaya-slider').sasayaSlider($(this).data('method'));
+    });
+
+    $('.sasaya-slider').sasayaSlider();
+  });
+```
+
 ## Contributing
 
 Clone a copy:
 
 ```bash
-git clone git@github.com:storyn26383/sasaya-slider.git
+git clone git@github.com:UniSharp/sasaya-slider.git
 ```
 
 Enter the plugin directory:
